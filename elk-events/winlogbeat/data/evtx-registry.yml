@@ -1,0 +1,14 @@
+update_time: 2021-07-28T07:20:30.5477929Z
+event_logs:
+- name: C:\Users\Asus VivoBook S\Documents\LIYIN\Deloitte\event-logs\security-logs-lc.evtx
+  record_number: 62222
+  timestamp: 2021-06-16T05:15:09.9762747Z
+  bookmark: "<BookmarkList>\r\n  <Bookmark Channel='C:\\Users\\Asus VivoBook S\\Documents\\LIYIN\\Deloitte\\event-logs\\security-logs-lc.evtx' RecordId='29524' IsCurrent='true'/>\r\n</BookmarkList>"
+- name: C:\Users\Asus VivoBook S\Documents\LIYIN\Deloitte\event-logs\setup-logs-lc.evtx
+  record_number: 19
+  timestamp: 2021-06-09T13:59:44.4340719Z
+  bookmark: "<BookmarkList>\r\n  <Bookmark Channel='C:\\Users\\Asus VivoBook S\\Documents\\LIYIN\\Deloitte\\event-logs\\setup-logs-lc.evtx' RecordId='19' IsCurrent='true'/>\r\n</BookmarkList>"
+- name: C:\Users\Asus VivoBook S\Documents\LIYIN\Deloitte\event-logs\system-logs-lc.evtx
+  record_number: 2638
+  timestamp: 2021-06-16T05:16:11.9521424Z
+  bookmark: "<BookmarkList>\r\n  <Bookmark Channel='C:\\Users\\Asus VivoBook S\\Documents\\LIYIN\\Deloitte\\event-logs\\system-logs-lc.evtx' RecordId='2638' IsCurrent='true'/>\r\n</BookmarkList>"

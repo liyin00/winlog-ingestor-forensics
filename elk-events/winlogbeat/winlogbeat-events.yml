@@ -1,0 +1,30 @@
+# Winlogbeat Shipper Settings
+winlogbeat.event_logs:
+ - name: ${EVTX_FILE}
+   no_more_events: stop
+winlogbeat.shutdown_timeout: 60s
+winlogbeat.registry_file: evtx-registry.yml
+
+# Allow ELK to see active connections
+monitoring.enabled: true
+
+# Add/Drop fields for searching within Kibana
+processors:
+  - add_fields:
+        target: ''
+        fields:
+            client: ${CLIENT}
+            identifier: ${ID}
+            log_file: ${FILE}
+  - drop_fields:
+        fields: ["event.kind", "event.code", "agent.ephemeral_id", "ecs.version"]
+        
+# Client Index Creation
+setup.ilm.enabled: false
+output.elasticsearch.index: '${ELK_CLIENT}-evtx'
+setup.template.name: "winlogbeat-7.3.2"
+setup.template.pattern: "${ELK_CLIENT}*"
+
+# Output data to Elasticsearch
+output.elasticsearch:
+    hosts: ['http://localhost:9200']
