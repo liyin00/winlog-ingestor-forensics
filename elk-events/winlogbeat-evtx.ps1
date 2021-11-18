@@ -14,7 +14,7 @@ $date = Get-Date -UFormat "%m-%d"
 
 # Ask for path containing desired logs
 Do {
-    Write-Host "Enter target directory path containing EVTX logs or folders grouping them by system (i.e. C:\Users\Asus VivoBook S\Documents\LIYIN\Deloitte\logs)."
+    Write-Host "Enter target directory path containing EVTX logs or folders grouping them by system (i.e. C:\Users\XXX\logs)."
     $tempPath = Read-Host "Path"
     # Check to see if input path exists
     $checkPath = Test-Path $tempPath
